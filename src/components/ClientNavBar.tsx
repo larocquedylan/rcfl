@@ -1,8 +1,11 @@
 'use client';
 
 import { useState } from 'react';
+interface ClientNavbarProps {
+  children: React.ReactNode;
+}
 
-export default function ClientNavbar({ children }) {
+const ClientNavBar: React.FC<ClientNavbarProps> = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -16,4 +19,6 @@ export default function ClientNavbar({ children }) {
       {isOpen && children}
     </>
   );
-}
+};
+
+export default ClientNavBar;

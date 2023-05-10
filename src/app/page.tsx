@@ -17,7 +17,7 @@ export default function Home() {
               Navigating the world of leadership can be a thrilling yet
               challenging experience, and connecting with a like-minded
               community can make all the difference. RCLF is here to provide an
-              accessible and locally focused alternative to traditional
+              accessible and Edmonton focused alternative to traditional
               high-priced leadership peer forums, designed for CEOs,
               entrepreneurs, and leaders at all levels.
             </p>
@@ -31,7 +31,7 @@ export default function Home() {
             <p className='mt-4 text-sm lg:text-base'>
               With a membership fee of just $200 per month, RCLF offers an
               affordable, high-value experience tailored for ambitious
-              professionals from diverse backgrounds. Here's what you can
+              professionals from diverse backgrounds. Here&apos;s what you can
               expect:
             </p>
             <ul className='mt-4 text-sm list-disc list-inside lg:text-base'>
@@ -56,13 +56,13 @@ export default function Home() {
               </li>
             </ul>
             <p className='mt-4 text-sm lg:text-base'>
-              RCLF is more than just a peer forum; it's an investment in
+              RCLF is more than just a peer forum; it is an investment in
               yourself, your company, and your community. Join us today and
               experience the difference that local, accessible leadership
-              support can make in your professional journey. Together, we'll
-              share our wins and losses, brainstorm, and ideate to become more
-              effective leaders, ultimately benefiting our companies and
-              communities.
+              support can make in your professional journey. Together,
+              we&apos;ll share our wins and losses, brainstorm, and ideate to
+              become more effective leaders, ultimately benefiting our companies
+              and communities.
             </p>
           </div>
         </div>

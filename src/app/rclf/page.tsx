@@ -1,9 +1,9 @@
 import Navbar from '@/components/NavBar';
 import React from 'react';
 
-interface AboutProps {}
+interface WhyRclfProps {}
 
-const About: React.FC<AboutProps> = ({}) => {
+const WhyRclf: React.FC<WhyRclfProps> = ({}) => {
   return (
     <div className='flex justify-center m-2 md:m-12'>
       <Navbar />
@@ -11,7 +11,7 @@ const About: React.FC<AboutProps> = ({}) => {
         <div className='grid w-full max-w-5xl my-8 md:text-left lg:mb-0 lg:grid-cols-1 lg:text-left'>
           <div className='px-4 py-0 md:px-5 md:py-4'>
             <h2 className='mb-3 text-2xl font-semibold'>
-              Unlock Your Leadership Potential with Our Leadership Forum
+              What Makes RCLF different?
             </h2>
             <p className='text-sm lg:text-base'>
               A Powerful Network for Today&apos;s Leaders
