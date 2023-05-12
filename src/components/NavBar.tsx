@@ -26,7 +26,7 @@ export default function Navbar() {
             1. Why a leadership group?
           </p>
         </Link>
-        <Link href='/why-rclf'>
+        <Link href='/rclf'>
           <p className='px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800'>
             2. Why RCLF as the group?
           </p>
@@ -45,7 +45,7 @@ export default function Navbar() {
                 1. Why a leadership group?
               </p>
             </Link>
-            <Link href='/why-rclf'>
+            <Link href='/rclf'>
               <p className='px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800'>
                 2. Why RCLF as the group?
               </p>
