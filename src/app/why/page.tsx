@@ -33,19 +33,19 @@ const About: React.FC<AboutProps> = ({}) => {
               in enhancing leader&apos;s effectiveness. Some key findings
               include:
             </p>
-            <ul className='mt-4 text-sm list-disc list-inside lg:text-base'>
+            <ul className='mt-2 space-y-1 text-sm list-disc list-inside lg:text-base'>
               <li>
-                Improved Company Performance: A study conducted by Vistage, a
-                leading CEO peer advisory organization, discovered that
-                companies led by CEOs who participated in peer advisory groups
-                outperformed their counterparts in terms of growth. The study
-                found that these companies experienced an average annual growth
-                rate of 7.1%, while the average growth rate for all US companies
-                was only 2.2%.
+                <b>Improved Company Performance: </b> A study conducted by
+                Vistage, a leading CEO peer advisory organization, discovered
+                that companies led by CEOs who participated in peer advisory
+                groups outperformed their counterparts in terms of growth. The
+                study found that these companies experienced an average annual
+                growth rate of 7.1%, while the average growth rate for all US
+                companies was only 2.2%.
               </li>
               <li>
-                Enhanced Decision-Making: In their book &quot; The Power of
-                Peers,&quot; authors Leon Shapiro and Leo Bottary discuss the
+                <b>Enhanced Decision-Making:</b> In their book &quot; The Power
+                of Peers,&quot; authors Leon Shapiro and Leo Bottary discuss the
                 concept of &quot; peer advantage&quot; and how it can benefit
                 leaders. They argue that participating in a peer group can
                 improve leaders&apos; decision-making abilities, as they can
@@ -53,19 +53,19 @@ const About: React.FC<AboutProps> = ({}) => {
                 informed choices.
               </li>
               <li>
-                Increased Accountability and Focus: According to a study
+                <b>Increased Accountability and Focus:</b> According to a study
                 published in the Harvard Business Review, peer groups can boost
                 accountability and focus among leaders. When leaders regularly
                 discuss their goals and challenges with a trusted network, they
                 are more likely to stay on track and commit to their objectives.
               </li>
               <li>
-                Personal and Professional Growth: Leadership forums can also
-                foster personal and professional growth. A study by the Center
-                for Creative Leadership found that leaders who participated in
-                peer coaching programs experienced significant improvements in
-                their leadership skills, including self-awareness, emotional
-                intelligence, and communication.
+                <b>Personal and Professional Growth:</b> Leadership forums can
+                also foster personal and professional growth. A study by the
+                Center for Creative Leadership found that leaders who
+                participated in peer coaching programs experienced significant
+                improvements in their leadership skills, including
+                self-awareness, emotional intelligence, and communication.
               </li>
             </ul>
             <h3 className='mt-4 text-xl font-semibold'>
