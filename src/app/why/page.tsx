@@ -5,7 +5,7 @@ interface AboutProps {}
 
 const About: React.FC<AboutProps> = ({}) => {
   return (
-    <div className='flex justify-center m-2 md:m-12'>
+    <div className='flex flex-col justify-center m-2 md:flex-row md:m-12'>
       <Navbar />
       <main className='flex flex-col items-center justify-between min-h-screen px-0 md:px-16'>
         <div className='grid w-full max-w-5xl my-8 md:text-left lg:mb-0 lg:grid-cols-1 lg:text-left'>
