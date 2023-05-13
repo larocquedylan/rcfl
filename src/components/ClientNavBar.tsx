@@ -14,6 +14,7 @@ const ClientNavBar: React.FC<ClientNavbarProps> = ({ children }) => {
         className='p-2 text-gray-600 dark:text-gray-200 focus:outline-none'
         onClick={() => setIsOpen(!isOpen)}
       >
+        click me
         <i className={`fas ${isOpen ? 'fa-times' : 'fa-bars'}`}></i>
       </button>
       {isOpen && children}
