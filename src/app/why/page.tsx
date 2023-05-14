@@ -1,4 +1,5 @@
 import Navbar from '@/components/NavBar';
+import NextPage from '@/components/NextPage';
 import React from 'react';
 
 interface AboutProps {}
@@ -97,6 +98,10 @@ const About: React.FC<AboutProps> = ({}) => {
               outcomes and a greater positive impact on the world.
             </p>
           </div>
+        </div>
+        <hr className='mt-6 border-t border-gray-200' />
+        <div className='flex justify-between w-full'>
+          <NextPage prevPage='/' nextPage='/rclf' />
         </div>
       </main>
     </div>

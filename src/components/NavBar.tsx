@@ -10,7 +10,7 @@ export default function Navbar() {
 
   useEffect(() => {
     // Check window width when component mounts
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 600) {
       setSmallScreen(true);
     }
 
@@ -39,8 +39,8 @@ export default function Navbar() {
             className='pl-0 sm:pl-4 relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert'
             src='./svg/grayscale.svg'
             alt='rclf Logo'
-            width={125}
-            height={100}
+            width={70}
+            height={70}
             priority
           />
         ) : (
@@ -55,7 +55,7 @@ export default function Navbar() {
         )}
 
         <Link href='/' className='flex justify-center m-auto align-middle'>
-          <h1 className='w-full text-xl font-semibold sm:text-lg md:p-4 '>
+          <h1 className='w-full text-lg font-semibold sm:text-lg md:p-4 '>
             River City Leadership Forum
           </h1>
         </Link>

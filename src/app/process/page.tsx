@@ -1,6 +1,7 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import Navbar from '@/components/NavBar';
+import NextPage from '@/components/NextPage';
 
 const ProcessAccordion = dynamic(
   () => import('../../components/ProcessAccordion'),
@@ -18,6 +19,10 @@ const ProcessPage = () => (
           <h2 className='mb-3 text-2xl font-semibold'>Your RCLF journey</h2>
           <ProcessAccordion />
         </div>
+      </div>
+      <hr className='mt-6 border-t border-gray-200' />
+      <div className='flex justify-between w-full'>
+        <NextPage prevPage='/rclf' nextPage='/' />
       </div>
     </main>
   </div>

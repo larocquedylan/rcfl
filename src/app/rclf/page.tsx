@@ -1,4 +1,5 @@
 import Navbar from '@/components/NavBar';
+import NextPage from '@/components/NextPage';
 import React from 'react';
 
 interface WhyRclfProps {}
@@ -70,12 +71,11 @@ const WhyRclf: React.FC<WhyRclfProps> = ({}) => {
                 having frequency to maintain momentum and accountability.
               </li>
             </ul>
-            <hr className='mt-6 border-t border-gray-200' />
-            {/* <div className='mt-4 space-y-2 text-xs'>
-              
-             
-            </div> */}
           </div>
+        </div>
+        <hr className='mt-6 border-t border-gray-200' />
+        <div className='flex justify-between w-full'>
+          <NextPage prevPage='/why' nextPage='/process' />
         </div>
       </main>
     </div>

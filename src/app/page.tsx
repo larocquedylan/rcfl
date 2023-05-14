@@ -1,4 +1,5 @@
 import Navbar from '@/components/NavBar';
+import NextPage from '@/components/NextPage';
 
 export default function Home() {
   return (
@@ -65,6 +66,11 @@ export default function Home() {
               and communities.
             </p>
           </div>
+        </div>
+
+        <hr className='mt-6 border-t border-gray-200' />
+        <div className='flex justify-between w-full'>
+          <NextPage prevPage='/' nextPage='/why' />
         </div>
       </main>
     </div>
