@@ -8,15 +8,12 @@ const About: React.FC<AboutProps> = ({}) => {
   return (
     <div className='flex flex-col justify-center m-2 md:flex-row md:m-12'>
       <Navbar />
-      <main className='flex flex-col items-center justify-between min-h-screen px-0 md:px-16'>
+      <main className='flex flex-col items-center justify-between min-h-screen px-0 lg:px-16'>
         <div className='grid w-full max-w-5xl my-8 md:text-left lg:mb-0 lg:grid-cols-1 lg:text-left'>
           <div className='px-4 py-0 md:px-5 md:py-4'>
             <h2 className='mb-3 text-2xl font-semibold'>
               Unlock Your Leadership Potential with Our Leadership Forum
             </h2>
-            <p className='text-sm lg:text-base'>
-              A Powerful Network for Today&apos;s Leaders
-            </p>
             <p className='mt-6 text-sm lg:text-base'>
               In today&apos;s fast-paced business environment, leaders face an
               array of challenges, including managing change, driving
@@ -26,6 +23,7 @@ const About: React.FC<AboutProps> = ({}) => {
               professionals, enabling leaders to navigate complex situations
               more effectively.
             </p>
+
             <h3 className='mt-4 text-xl font-semibold'>
               Data and Studies: The Power of Leadership Forums
             </h3>
@@ -37,15 +35,15 @@ const About: React.FC<AboutProps> = ({}) => {
             <ul className='mt-2 space-y-1 text-sm list-disc list-inside lg:text-base'>
               <li>
                 <b>Improved Company Performance: </b> A study conducted by
-                Vistage, a leading CEO peer advisory organization, discovered
-                that companies led by CEOs who participated in peer advisory
-                groups outperformed their counterparts in terms of growth. The
-                study found that these companies experienced an average annual
-                growth rate of 7.1%, while the average growth rate for all US
-                companies was only 2.2%.
+                Vistage, a CEO peer advisory organization, discovered that
+                companies led by CEOs who participated in peer advisory groups
+                outperformed their counterparts in terms of growth. The study
+                found that these companies experienced an average annual growth
+                rate of 7.1%, while the average growth rate for all US companies
+                was only 2.2%.
               </li>
               <li>
-                <b>Enhanced Decision-Making:</b> In their book &quot; The Power
+                <b>Enhanced Decision-Making:</b> In their book &quot;The Power
                 of Peers,&quot; authors Leon Shapiro and Leo Bottary discuss the
                 concept of &quot; peer advantage&quot; and how it can benefit
                 leaders. They argue that participating in a peer group can
