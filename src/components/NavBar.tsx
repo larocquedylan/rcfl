@@ -63,50 +63,19 @@ export default function Navbar() {
       <div className='flex-col hidden gap-2 md:flex'>
         <Link href='/why'>
           <p className='px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800'>
-            1. Why a leadership group?
+            Why a Forum?
           </p>
         </Link>
         <Link href='/rclf'>
           <p className='px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800'>
-            2. Why RCLF as the group?
+            Why RCLF Forum?
           </p>
         </Link>
         <Link href='/process'>
           <p className='px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800'>
-            3. Our process?
+            Application Process
           </p>
         </Link>
-        <Link href='/faq'>
-          <p className='px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800'>
-            4. FAQ?
-          </p>
-        </Link>
-      </div>
-      <div className='flex justify-center align-middle md:hidden basis-1/8'>
-        <ClientNavBar>
-          <div className='flex flex-col gap-2'>
-            <Link href='/why'>
-              <p className='px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800'>
-                1. Why a leadership group?
-              </p>
-            </Link>
-            <Link href='/rclf'>
-              <p className='px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800'>
-                2. Why RCLF as the group?
-              </p>
-            </Link>
-            <Link href='/process'>
-              <p className='px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800'>
-                3. Our process?
-              </p>
-            </Link>
-            <Link href='/faq'>
-              <p className='px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800'>
-                FAQ?
-              </p>
-            </Link>
-          </div>
-        </ClientNavBar>
       </div>
     </nav>
   );
