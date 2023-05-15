@@ -5,14 +5,14 @@ export default function Home() {
   return (
     <div className='flex flex-col justify-center m-2 md:flex-row md:m-12'>
       <Navbar />
-      <main className='flex flex-col items-center justify-between min-h-screen px-0 md:px-16 md:overflow-auto'>
+      <main className='flex flex-col items-center justify-between min-h-screen px-0 lg:px-16 md:overflow-auto'>
         <div className='grid w-full max-w-5xl my-8 md:text-left lg:mb-0 lg:grid-cols-1 lg:text-left md:overflow-auto'>
           <div className='px-4 py-0 md:px-5 md:py-4 md:overflow-auto'>
             <h2 className='mb-3 text-2xl font-semibold'>
               Empower Your Leadership Journey with RCLF
             </h2>
             <p className='text-sm lg:text-base'>
-              A Local Peer Forum for Ambitious Professionals
+              A Edmonton Peer Forum for Ambitious Professionals
             </p>
             <p className='mt-6 text-sm lg:text-base'>
               Navigating the world of leadership can be a thrilling yet
@@ -65,9 +65,22 @@ export default function Home() {
               become more effective leaders, ultimately benefiting our companies
               and communities.
             </p>
+            <p className='mt-4 text-sm font-semibold lg:text-base'>
+              If you are interested in learning more about RCLF,{' '}
+              <a
+                href='https://calendly.com/rclf'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='font-bold text-blue-500'
+              >
+                {' '}
+                Book a call with us!
+              </a>{' '}
+              We would be happy to provide some value, answer questions, and
+              help determine if RCLF is a good fit for you.
+            </p>
           </div>
         </div>
-
         <hr className='mt-6 border-t border-gray-200' />
         <div className='flex justify-between w-full'>
           <NextPage prevPage='/' nextPage='/why' />
