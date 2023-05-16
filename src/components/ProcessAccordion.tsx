@@ -5,7 +5,7 @@ import * as Accordion from '@radix-ui/react-accordion';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
 
 const ProcessAccordion = () => (
-  <Accordion.Root type='single' collapsible>
+  <Accordion.Root type='multiple'>
     <AccordionItem value='step1' title='Step 1: Initial Interest'>
       You&apos;ve heard about our leadership forum and you&apos;re intrigued.
       You&apos;ve visited our website, and you now understand about 70% of what
@@ -19,7 +19,7 @@ const ProcessAccordion = () => (
         href='https://calendly.com/rclf'
         target='_blank'
         rel='noopener noreferrer'
-        className='font-bold'
+        className='font-bold text-blue-500'
       >
         Calendly link
       </a>
@@ -34,7 +34,7 @@ const ProcessAccordion = () => (
         href='https://docs.google.com/forms/d/e/1FAIpQLScp9yVWKb8SShYUWskTzCu2Gv68mZ_HfqMC8G6gNT3SKpeV-Q/viewform?vc=0&c=0&w=1&flr=0'
         target='_blank'
         rel='noopener noreferrer'
-        className='font-bold'
+        className='font-bold text-blue-500'
       >
         Here
       </a>
@@ -45,17 +45,23 @@ const ProcessAccordion = () => (
     <AccordionItem value='step4' title='Step 4: Curation'>
       Once your application is in, our team will get to work. We&apos;ll review
       your profile, consider your business needs, and start the matching
-      process. We aim to place you in a suitable group within 90 days. If we
-      can&apos;t find a fit within six months, we&apos;ll refund your deposit.
+      process.{' '}
+      <span className='font-semibold'>
+        We aim to place you in a suitable group within 90 days. If we can&apos;t
+        find a fit within six months, we&apos;ll refund your deposit.
+      </span>
     </AccordionItem>
 
     <AccordionItem value='step5' title='Step 5: Acceptance'>
       If we find a pre-existing group that fits your profile, we&apos;ll
       introduce your profile to current members. They&apos;ll have a chance to
       vote on your admission. If the majority votes you in, you&apos;re part of
-      the team. If a suitable existing group isn&apos;t available, we&apos;ll
-      work on forming a new one and the 6-month period will continue. If we
-      can&apos;t find a fit within six months, we&apos;ll refund your deposit.
+      the team.
+      <span className='font-semibold'>
+        If a suitable existing group isn&apos;t available, we&apos;ll work on
+        forming a new one and the 6-month period will continue. If we can&apos;t
+        find a fit within six months, we&apos;ll refund your deposit.
+      </span>
     </AccordionItem>
 
     <AccordionItem value='step6' title='Step 6: Placement'>
@@ -98,7 +104,7 @@ type AccordionTriggerProps = {
 
 const AccordionTrigger: React.FC<AccordionTriggerProps> = ({ children }) => (
   <Accordion.Header className='flex items-center justify-between p-3 rounded-t-md'>
-    <Accordion.Trigger className='text-lg font-semibold cursor-pointer'>
+    <Accordion.Trigger className='text-lg font-semibold cursor-pointer hover:text-slate-500'>
       {children}
     </Accordion.Trigger>
     <ChevronDownIcon />
