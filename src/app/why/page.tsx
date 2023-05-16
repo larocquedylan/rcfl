@@ -1,3 +1,4 @@
+import CallToAction from '@/components/CallToAction';
 import Navbar from '@/components/NavBar';
 import NextPage from '@/components/NextPage';
 import React from 'react';
@@ -9,7 +10,7 @@ const About: React.FC<AboutProps> = ({}) => {
     <div className='flex flex-col justify-center m-2 md:flex-row md:m-12'>
       <Navbar />
       <main className='flex flex-col items-center justify-between min-h-screen px-0 lg:px-16'>
-        <div className='grid w-full max-w-5xl my-8 md:text-left lg:mb-0 lg:grid-cols-1 lg:text-left'>
+        <div className='grid w-full max-w-5xl my-4 md:my-8 md:text-left lg:mb-0 lg:grid-cols-1 lg:text-left'>
           <div className='px-4 py-0 md:px-5 md:py-4'>
             <h2 className='mb-3 text-2xl font-semibold'>
               Unlock Your Leadership Potential with Our Leadership Forum
@@ -22,6 +23,11 @@ const About: React.FC<AboutProps> = ({}) => {
               A leadership forum offers a supportive network of like-minded
               professionals, enabling leaders to navigate complex situations
               more effectively.
+            </p>
+            <p className='mt-6 text-sm lg:text-base'>
+              A leadership forum is a peer group that brings together leaders
+              from different backgrounds to discuss and share ideas on
+              leadership.
             </p>
 
             <h3 className='mt-4 text-xl font-semibold'>
@@ -95,6 +101,7 @@ const About: React.FC<AboutProps> = ({}) => {
               and their organizations, ultimately leading to more successful
               outcomes and a greater positive impact on the world.
             </p>
+            <CallToAction />
           </div>
         </div>
         <hr className='mt-6 border-t border-gray-200' />
