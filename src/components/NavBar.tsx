@@ -2,11 +2,26 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import ClientNavBar from './ClientNavBar';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
-export default function Navbar() {
+const Navbar = () => {
   const [isSmallScreen, setSmallScreen] = useState(false);
+  const pathname = usePathname();
+  const navLinks = [
+    {
+      href: '/why',
+      name: 'Why a Forum?',
+    },
+    {
+      href: '/rclf',
+      name: 'Why RCLF Forum?',
+    },
+    {
+      href: '/process',
+      name: 'Application Process',
+    },
+  ];
 
   useEffect(() => {
     // Check window width when component mounts
@@ -32,51 +47,42 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className='static top-0 z-50 flex flex-row justify-between ml-0 md:justify-start min-w-fit bg-gradient-to-t from-blue via-white dark:from-black dark:via-black lg:sticky lg:h-auto lg:w-auto lg:bg-none md:flex md:flex-col'>
-      <div className='flex flex-row md:flex-col md:p-0 basis-7/8'>
-        {isSmallScreen ? (
-          <Image
-            className='pl-0 sm:pl-4 relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert'
-            src='./svg/grayscale.svg'
-            alt='rclf Logo'
-            width={70}
-            height={70}
-            priority
-          />
-        ) : (
-          <Image
-            className='pl-0 md:pl-4 relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert'
-            src='./svg/grayscale.svg'
-            alt='rclf Logo'
-            width={250}
-            height={200}
-            priority
-          />
-        )}
+    <nav className='sticky top-0 z-50 flex flex-row justify-between ml-0 md:justify-start min-w-fit bg-gradient-to-t from-blue via-white dark:from-black dark:via-black lg:h-auto lg:w-auto lg:bg-none md:flex md:flex-col'>
+      <div className='flex flex-row w-full bg-blue-500 rounded-md md:flex-col md:p-0 border-cyan-50 md:bg-transparent '>
+        <Image
+          className=' relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert lg:mx-auto'
+          src='./svg/grayscale.svg'
+          alt='rclf Logo'
+          width={isSmallScreen ? 100 : 175}
+          height={isSmallScreen ? 80 : 150}
+          priority
+        />
 
         <Link href='/' className='flex justify-center m-auto align-middle'>
-          <h1 className='w-full text-lg font-semibold sm:text-lg md:p-4 '>
+          <h1 className='flex justify-center w-full m-auto text-lg font-semibold align-middle sm:text-lg md:px-4 hover:text-slate-500'>
             River City Leadership Forum
           </h1>
         </Link>
       </div>
+      <hr className='my-2 border-t border-gray-200' />
+
       <div className='flex-col hidden gap-2 md:flex'>
-        <Link href='/why'>
-          <p className='px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800'>
-            Why a Forum?
-          </p>
-        </Link>
-        <Link href='/rclf'>
-          <p className='px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800'>
-            Why RCLF Forum?
-          </p>
-        </Link>
-        <Link href='/process'>
-          <p className='px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800'>
-            Application Process
-          </p>
-        </Link>
+        {navLinks.map((link) => (
+          <Link key={link.name} href={link.href}>
+            <p
+              className={`px-4 py-2 rounded hover:text-slate-500 hover:bg-gray-200 dark:hover:bg-gray-800 ${
+                pathname.startsWith(link.href)
+                  ? 'font-semibold text-blue-500'
+                  : ''
+              }`}
+            >
+              {link.name}
+            </p>
+          </Link>
+        ))}
       </div>
     </nav>
   );
-}
+};
+
+export default Navbar;
