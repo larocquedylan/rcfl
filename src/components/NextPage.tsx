@@ -10,7 +10,7 @@ interface NextPageProps {
 const NextPage: React.FC<NextPageProps> = ({ prevPage, nextPage }) => {
   return (
     <div className='flex flex-row justify-between w-full mx-12 mb-8'>
-      <div className='flex flex-row justify-between align-middle'>
+      <div className='flex flex-row justify-between p-4 align-middle bg-blue-500 rounded-md hover:bg-blue-100'>
         {prevPage && (
           <Link href={prevPage}>
             <ArrowLeftIcon className='align-middle' /> {'  '}
@@ -18,7 +18,7 @@ const NextPage: React.FC<NextPageProps> = ({ prevPage, nextPage }) => {
         )}
       </div>
 
-      <div className='flex flex-row justify-between align-middle'>
+      <div className='flex flex-row justify-between p-4 align-middle bg-blue-500 rounded-md hover:bg-blue-100'>
         {nextPage && (
           <Link href={nextPage}>
             {' '}
