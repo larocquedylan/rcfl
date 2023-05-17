@@ -1,4 +1,5 @@
 import CallToAction from '@/components/CallToAction';
+import Footer from '@/components/Footer';
 import Navbar from '@/components/NavBar';
 import NextPage from '@/components/NextPage';
 
@@ -13,23 +14,19 @@ export default function Home() {
               Empower Your Leadership Journey with RCLF
             </h2>
             <p className='text-sm lg:text-base'>
-              A Edmonton Peer Forum for Ambitious Professionals
-            </p>
-            <p className='mt-6 text-sm lg:text-base'>
-              Navigating the world of leadership can be a thrilling yet
-              challenging experience, and connecting with a like-minded
-              community can make all the difference. RCLF is here to provide an
-              accessible and Edmonton focused alternative to traditional
-              high-priced leadership peer forums, designed for CEOs,
-              entrepreneurs, and leaders at all levels.
+              An Edmonton Peer Forum for Ambitious Professionals
             </p>
             <p className='mt-4 text-sm lg:text-base'>
-              Established in 2020, RCLF has evolved through trial and error to
-              create an optimized format that values your time. Our half-day
-              meetings strike the perfect balance between meaningful interaction
-              and time efficiency, ensuring you get the most out of every
-              session.
+              Navigating the world of leadership can be a thrilling yet
+              challenging experience, and connecting with a like-minded
+              community can make all the difference. Established in 2020, RCLF
+              has evolved through trial and error to create an optimized format
+              that values your time. RCLF is here to provide an accessible and
+              Edmonton focused alternative to traditional high-priced leadership
+              peer forums, designed for CEOs, entrepreneurs, and leaders at all
+              levels.
             </p>
+
             <p className='mt-4 text-sm lg:text-base'>
               With a membership fee of just $200 per month, RCLF offers an
               affordable, high-value experience tailored for ambitious
@@ -63,8 +60,8 @@ export default function Home() {
               experience the difference that local, accessible leadership
               support can make in your professional journey. Together,
               we&apos;ll share our wins and losses, brainstorm, and ideate to
-              become more effective leaders, ultimately benefiting our companies
-              and communities.
+              become more effective leaders, ultimately benefitting our
+              companies and communities.
             </p>
             <CallToAction />
           </div>
@@ -73,6 +70,7 @@ export default function Home() {
         <div className='flex justify-between w-full'>
           <NextPage prevPage='/' nextPage='/why' />
         </div>
+        <Footer />
       </main>
     </div>
   );
