@@ -2,6 +2,8 @@ import CallToAction from '@/components/CallToAction';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/NavBar';
 import NextPage from '@/components/NextPage';
+import Image from 'next/image';
+import skyline from '../../public/Dyrie_photo_of_edmontons_walterdale_bridge_in_2050_in_the_eveni_8cd8bc40-608b-41df-9ab3-631bb9e660e4 (1).png';
 
 export default function Home() {
   return (
@@ -10,58 +12,38 @@ export default function Home() {
       <main className='flex flex-col items-center justify-between min-h-screen px-0 lg:px-16 md:overflow-auto'>
         <div className='grid w-full max-w-5xl my-4 md:my-8 md:text-left lg:mb-0 lg:grid-cols-1 lg:text-left md:overflow-auto'>
           <div className='px-4 py-0 md:px-5 md:overflow-auto'>
+            <Image
+              src={skyline}
+              width={1500}
+              height={100}
+              alt='skyline'
+              className='mx-auto mb-3 rounded-xl'
+            />
             <h2 className='mb-3 text-xl font-semibold lg:text-2xl'>
               Empower Your Leadership Journey with RCLF
             </h2>
-            <p className='text-sm lg:text-base'>
-              An Edmonton Peer Forum for Ambitious Professionals
+            <p className='mt-4 text-sm lg:text-base'>
+              Introducing Edmonton&apos;s Peer Forum for Ambitious
+              Professionals, RCLF. Established in 2020, we offer an affordable,
+              local alternative to traditional leadership peer forums. Designed
+              for CEOs, entrepreneurs, and leaders at all levels, RCLF&apos;s
+              membership fee is just $200 per month.
             </p>
             <p className='mt-4 text-sm lg:text-base'>
-              Navigating the world of leadership can be a thrilling yet
-              challenging experience, and connecting with a like-minded
-              community can make all the difference. Established in 2020, RCLF
-              has evolved through trial and error to create an optimized format
-              that values your time. RCLF is here to provide an accessible and
-              Edmonton focused alternative to traditional high-priced leadership
-              peer forums, designed for CEOs, entrepreneurs, and leaders at all
-              levels.
-            </p>
-
-            <p className='mt-4 text-sm lg:text-base'>
-              With a membership fee of just $200 per month, RCLF offers an
-              affordable, high-value experience tailored for ambitious
-              professionals from diverse backgrounds. Here&apos;s what you can
-              expect:
+              Here&apos;s what you can expect from RCLF:
             </p>
             <ul className='mt-4 text-sm list-disc list-inside lg:text-base'>
-              <li>
-                A carefully curated group of local leaders to engage with and
-                learn from, based on your unique experiences
-              </li>
-              <li>
-                Templates and agenda outlines for effective and organized
-                meetings
-              </li>
-              <li>
-                Facilitation of your first three sessions to kickstart your RCLF
-                journey
-              </li>
-              <li>
-                Quarterly facilitator audits to maintain best practices and
-                improve your experience
-              </li>
-              <li>
-                A commitment to give back 20% of our earnings to the community
-              </li>
+              <li>Engage with a curated group of local leaders</li>
+              <li>Access templates and agendas for effective meetings</li>
+              <li>Receive facilitation for your first three sessions</li>
+              <li>Benefit from quarterly facilitator audits</li>
+              <li>Support the community with 20% of RCLF&apos;s earnings</li>
             </ul>
             <p className='mt-4 text-sm lg:text-base'>
-              RCLF is more than just a peer forum; it is an investment in
-              yourself, your company, and your community. Join us today and
-              experience the difference that local, accessible leadership
-              support can make in your professional journey. Together,
-              we&apos;ll share our wins and losses, brainstorm, and ideate to
-              become more effective leaders, ultimately benefitting our
-              companies and communities.
+              Join RCLF today and invest in yourself, your company, and
+              Edmonton. Experience the difference local leadership support makes
+              in your professional journey. Share wins and losses, brainstorm,
+              and ideate together to become more effective leaders.
             </p>
             <CallToAction />
           </div>
