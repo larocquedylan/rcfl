@@ -1,4 +1,5 @@
 import CallToAction from '@/components/CallToAction';
+import Footer from '@/components/Footer';
 import Navbar from '@/components/NavBar';
 import NextPage from '@/components/NextPage';
 import React from 'react';
@@ -12,24 +13,14 @@ const WhyRclf: React.FC<WhyRclfProps> = ({}) => {
       <main className='flex flex-col items-center justify-between px-0 lg:px-16'>
         <div className='grid w-full max-w-5xl my-4 md:my-8 md:text-left lg:mb-0 lg:grid-cols-1 lg:text-left'>
           <div className='px-4 py-0 md:px-5 md:py-4'>
-            <h2 className='mb-3 text-2xl font-semibold'>
-              Discover the RCLF Difference
-            </h2>
+            <h2 className='mb-3 text-2xl font-semibold'>Why RCLF?</h2>
             <p className='text-sm lg:text-base'>
               RCLF is the Edmonton leadership forum that prioritizes
               accessibility, affordability, and giving back. We offer
               streamlined leadership support at just $200 per month, and we
               donate 20% of our revenues to support our community.
             </p>
-            <p className='mt-4 text-sm lg:text-base'>
-              RCLF ensures <i>Confidentiality</i> and <i>Committment</i> from
-              all members. If a member misses more than 1.5 meetings, their
-              place in the group will be voted upon by the group. Breach of
-              Confidentiality will result in immediate removal from the group.
-              The chair of the group will rotate amongst members, the chair will
-              be in charge of providing the facility and facilitating the
-              session.
-            </p>
+
             <h3 className='mt-4 text-xl font-semibold'>
               Our Unique Operating Principles:
             </h3>
@@ -68,6 +59,15 @@ const WhyRclf: React.FC<WhyRclfProps> = ({}) => {
                 community and building a better Edmonton
               </li>
             </ul>
+            <p className='mt-4 text-sm lg:text-base'>
+              RCLF ensures <i>Confidentiality</i> and <i>Commitment</i> from all
+              members. If a member misses more than 1.5 meetings, their place in
+              the group will be voted upon by the group. Breach of
+              Confidentiality will result in immediate removal from the group.
+              The chair of the group will rotate amongst members, the chair will
+              be in charge of providing the facility and facilitating the
+              session.
+            </p>
             <CallToAction />
           </div>
         </div>
@@ -75,6 +75,7 @@ const WhyRclf: React.FC<WhyRclfProps> = ({}) => {
         <div className='flex justify-between w-full'>
           <NextPage prevPage='/why' nextPage='/process' />
         </div>
+        <Footer />
       </main>
     </div>
   );
