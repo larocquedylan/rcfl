@@ -8,21 +8,27 @@ interface NextPageProps {
 }
 
 const NextPage: React.FC<NextPageProps> = ({ prevPage, nextPage }) => {
+  if (prevPage || nextPage === '/') {
+  }
   return (
-    <div className='flex flex-row justify-between w-full mx-12 mb-8'>
-      <div className='flex flex-row justify-between p-4 align-middle bg-blue-500 rounded-md hover:bg-blue-100'>
+    <div className='flex flex-row justify-between w-full mx-4 mb-8'>
+      <div className='flex'>
         {prevPage && (
           <Link href={prevPage}>
-            <ArrowLeftIcon className='align-middle' /> {'  '}
+            <div className='flex flex-row items-center justify-between p-4 align-middle border border-blue-500 rounded-md min-w-fit border-spacing-1 hover:bg-blue-100'>
+              <ArrowLeftIcon className='align-middle' fontWeight='600' /> {'  '}
+              <p className='pl-4'>{prevPage === '/' ? '/home' : prevPage}</p>
+            </div>
           </Link>
         )}
       </div>
-
-      <div className='flex flex-row justify-between p-4 align-middle bg-blue-500 rounded-md hover:bg-blue-100'>
+      <div className='flex'>
         {nextPage && (
           <Link href={nextPage}>
-            {' '}
-            <ArrowRightIcon />
+            <div className='flex flex-row items-center justify-between p-4 align-middle border border-blue-500 rounded-md min-w-fit border-spacing-1 hover:bg-blue-100'>
+              <p className='pr-4'>{nextPage === '/' ? '/home' : nextPage} </p>{' '}
+              <ArrowRightIcon className='align-middle' fontWeight='600' />
+            </div>
           </Link>
         )}
       </div>
