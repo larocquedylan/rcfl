@@ -1,4 +1,5 @@
 import CallToAction from '@/components/CallToAction';
+import Footer from '@/components/Footer';
 import Navbar from '@/components/NavBar';
 import NextPage from '@/components/NextPage';
 import React from 'react';
@@ -13,7 +14,7 @@ const About: React.FC<AboutProps> = ({}) => {
         <div className='grid w-full max-w-5xl my-4 md:my-8 md:text-left lg:mb-0 lg:grid-cols-1 lg:text-left'>
           <div className='px-4 py-0 md:px-5 md:py-4'>
             <h2 className='mb-3 text-2xl font-semibold'>
-              Unlock Your Leadership Potential with Our Leadership Forum
+              Develop Your Leadership Potential with Our Forum
             </h2>
             <p className='mt-6 text-sm lg:text-base'>
               In today&apos;s fast-paced business environment, leaders face an
@@ -25,9 +26,9 @@ const About: React.FC<AboutProps> = ({}) => {
               more effectively.
             </p>
             <p className='mt-6 text-sm lg:text-base'>
-              A leadership forum is a peer group that brings together leaders
-              from different backgrounds to discuss and share ideas on
-              leadership.
+              A leadership forum is a peer group that brings leaders from
+              different backgrounds to get together to check in and work through
+              issues and opportunities that leaders face on a monthly basis.
             </p>
 
             <h3 className='mt-4 text-xl font-semibold'>
@@ -38,7 +39,7 @@ const About: React.FC<AboutProps> = ({}) => {
               in enhancing leader&apos;s effectiveness. Some key findings
               include:
             </p>
-            <ul className='mt-2 space-y-1 text-sm list-disc list-inside lg:text-base'>
+            <ul className='mt-4 space-y-1 text-sm list-disc list-inside lg:text-base'>
               <li>
                 <b>Improved Company Performance: </b> A study conducted by
                 Vistage, a CEO peer advisory organization, discovered that
@@ -108,6 +109,7 @@ const About: React.FC<AboutProps> = ({}) => {
         <div className='flex justify-between w-full'>
           <NextPage prevPage='/' nextPage='/rclf' />
         </div>
+        <Footer />
       </main>
     </div>
   );
