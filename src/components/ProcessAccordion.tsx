@@ -5,7 +5,18 @@ import * as Accordion from '@radix-ui/react-accordion';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
 
 const ProcessAccordion = () => (
-  <Accordion.Root type='multiple'>
+  <Accordion.Root
+    type='multiple'
+    defaultValue={[
+      'step1',
+      'step2',
+      'step3',
+      'step4',
+      'step5',
+      'step6',
+      'step7',
+    ]}
+  >
     <AccordionItem value='step1' title='Step 1: Initial Interest'>
       You&apos;ve heard about our leadership forum and you&apos;re intrigued.
       You&apos;ve visited our website, and you now understand about 70% of what
@@ -103,8 +114,8 @@ type AccordionTriggerProps = {
 };
 
 const AccordionTrigger: React.FC<AccordionTriggerProps> = ({ children }) => (
-  <Accordion.Header className='flex items-center justify-between p-3 rounded-t-md'>
-    <Accordion.Trigger className='text-lg font-semibold cursor-pointer hover:text-slate-500'>
+  <Accordion.Header className='flex items-center justify-between rounded-t-md'>
+    <Accordion.Trigger className='font-semibold cursor-pointer text-md hover:text-slate-500'>
       {children}
     </Accordion.Trigger>
     <ChevronDownIcon />
@@ -116,7 +127,9 @@ type AccordionContentProps = {
 };
 
 const AccordionContent: React.FC<AccordionContentProps> = ({ children }) => (
-  <Accordion.Content className='p-3 rounded-b-md'>{children}</Accordion.Content>
+  <Accordion.Content className='p-3 text-sm rounded-b-md'>
+    {children}
+  </Accordion.Content>
 );
 
 export default ProcessAccordion;
