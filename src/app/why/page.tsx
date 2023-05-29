@@ -1,5 +1,5 @@
 import Layout from '@/components/Layout';
-import skyline from '../../../public/Dyrie_A_beautiful_and_detailed_photo_of_the_Edmonton_skyline_at_1fc95ffc-5bf1-42a2-b88e-69c83db38bdc.png';
+import skyline from '../../../public/Dyrie_A_beautiful_and_detailed_photo_of_the_Edmonton_skyline_at_7ed491ad-faed-404f-83b2-e0aa7b0c93c2.png';
 import CallToAction from '@/components/CallToAction';
 import React from 'react';
 

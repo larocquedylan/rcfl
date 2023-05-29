@@ -22,7 +22,7 @@ const ComponentName: React.FC<ComponentNameProps> = ({}) => (
         className='flex items-center p-1 mr-4 transition-colors duration-300 borderrounded-md hover:text-blue-500 hover:border-blue-900'
       >
         <BsEnvelope />
-        <p className='pl-4 my-2 text-sm'>justin.l@rocadvisors.ca</p>
+        <p className='pl-4 my-2 text-sm'>justin.l@rclf.ca</p>
       </a>
     </footer>
   </>
